@@ -10,9 +10,9 @@ void main()
 
   while (t != 0)
   {
-    r = r * 10;
-    r = r + t%10;
-    t = t/10;
+    r *= 10;
+    r += t%10;
+    t /= 10;
   }
 
   if (n == r)
