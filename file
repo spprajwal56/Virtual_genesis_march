@@ -6,13 +6,10 @@ void main()
   printf("Enter a number\n");
   scanf("%d", &n);
 
-  t = n;
-
-  while (t != 0)
+ for(t=n; t!=0; t /= 10)
   {
     r *= 10;
     r += t%10;
-    t /= 10;
   }
 
   if (n == r)
